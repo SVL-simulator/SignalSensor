@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2019-2020 LG Electronics, Inc.
+ * Copyright (c) 2019-2021 LG Electronics, Inc.
  *
  * This software contains code licensed as described in LICENSE.
  *
@@ -85,7 +85,7 @@ namespace Simulator.Sensors
 
         void OnTriggerStay(Collider other)
         {
-            var currentLane = other.GetComponentInParent<MapLane>();
+            var currentLane = other.GetComponentInParent<MapTrafficLane>();
             if (currentLane)
             {
                 if (currentLane.stopLine?.isStopSign == false)
