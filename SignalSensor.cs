@@ -40,7 +40,7 @@ namespace Simulator.Sensors
         private WireframeBoxes WireframeBoxes;
 
         [AnalysisMeasurement(MeasurementType.Misc)]
-        List<string> DetectedStates = new List<string>();
+        public List<string> DetectedStates = new List<string>();
 
         [AnalysisMeasurement(MeasurementType.Count)]
         public int SignalsDetected => DetectedSignals.Count;
