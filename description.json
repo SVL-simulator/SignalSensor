@@ -1,0 +1,18 @@
+{
+  "name": "Signal Sensor",
+  "accessType": "public",
+  "description": "Example of a sensor to detect traffic signals",
+  "licenseName": "LG Content",
+  "copyright": "LG Electronics Inc.",
+  "tags": [
+    {
+      "name": "LG"
+    },
+    {
+      "name": "Signal"
+    },
+    {
+      "name": "Default"
+    }
+  ]
+}
