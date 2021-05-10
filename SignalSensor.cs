@@ -45,13 +45,19 @@ namespace Simulator.Sensors
         [AnalysisMeasurement(MeasurementType.Count)]
         public int SignalsDetected => DetectedSignals.Count;
 
-        public override SensorDistributionType DistributionType => SensorDistributionType.LowLoad;
+        public override SensorDistributionType DistributionType => SensorDistributionType.MainOrClient;
+        public override float PerformanceLoad { get; } = 0.05f;
 
-        void Start()
+        protected override void Initialize()
         {
             WireframeBoxes = SimulatorManager.Instance.WireframeBoxes;
             MapManager = SimulatorManager.Instance.MapManager;
             NextSend = Time.time + 1.0f / Frequency;
+        }
+
+        protected override void Deinitialize()
+        {
+            
         }
 
         void Update()
